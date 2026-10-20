@@ -29,3 +29,13 @@
 .brand-favicon{width:39px;height:39px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 0 10px #ed29354a)}
 .footer-logo .brand-favicon{width:42px;height:42px}
 @media(max-width:480px){.brand-favicon{width:34px;height:34px}}
+
+/* Icon-aligned footer navigation including WhatsApp */
+.footer-nav-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;max-width:1050px;margin:0 auto 32px;align-items:start}
+.footer-nav-item{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;color:#f5edef;text-decoration:none;border:0;background:transparent;padding:5px;min-width:0;font-size:12px;line-height:1.4;text-align:center}
+.footer-nav-icon{height:58px;width:58px;border-radius:16px;border:1px solid #932b33;background:linear-gradient(145deg,#2b0b12,#100a0e);color:#ff4246;display:grid;place-items:center;box-shadow:inset 0 1px 0 #ffaaaa16,0 0 18px #b921241c;transition:transform .2s,box-shadow .2s,color .2s}
+.footer-nav-item:hover .footer-nav-icon,.footer-nav-item:focus-visible .footer-nav-icon{transform:translateY(-4px);color:#ff8580;box-shadow:0 0 25px #e52d3950}
+.footer-nav-item:hover{color:#ff9b91}
+.footer-legal{border-top:1px solid #3a2027;padding-top:24px}
+@media(max-width:720px){.footer-nav-grid{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:24px}.footer-nav-item{font-size:11px}.footer-nav-icon{height:52px;width:52px}}
+@media(max-width:360px){.footer-nav-grid{gap:10px}.footer-nav-item{font-size:10px}}
